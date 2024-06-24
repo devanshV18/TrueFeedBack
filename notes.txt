@@ -2,4 +2,4 @@
 anonymous feedback sharing app for business, products and sevices.
 
 FLOW : - 
-User.ts -> schema folder files to validate schemas using zod -> lib(database connect and env files), resend.ts -> helpers(sendVerificationEmail.ts)
+User.ts -> schema folder files to validate schemas using zod -> lib(database connect and env files), resend.ts -> helpers(sendVerificationEmail.ts) -> outside source emails(VerificationEmail.tsx - email template, another file to recognise it in ts) -> ApiResponse(standaredised api responses) -> sendVerificationEmail(used resend, Verification emaila nd other config codes to complete send verification email functionality) 
