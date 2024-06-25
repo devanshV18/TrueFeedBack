@@ -4,4 +4,4 @@ anonymous feedback sharing app for business, products and sevices.
 FLOW : - 
 User.ts -> schema folder files to validate schemas using zod -> lib(database connect and env files), resend.ts -> helpers(sendVerificationEmail.ts) -> outside source emails(VerificationEmail.tsx - email template, another file to recognise it in ts) -> ApiResponse(standaredised api responses) -> sendVerificationEmail(used resend, Verification emaila nd other config codes to complete send verification email functionality) 
 
-signin functionality using nextauth -> src->api->auth->[...nextauth]->option.ts,route.ts. -> completed option.tsss
+signin functionality using nextauth -> src->api->auth->[...nextauth]->option.ts,route.ts. -> completed authorize function in option.ts then added other params like pages etc -> options.ts(to complete or code callbacks we need to first code types -> next-auth.d.tss)  -> route.ts(app->api->auth->..) -> middleware.ts -> page.ts
